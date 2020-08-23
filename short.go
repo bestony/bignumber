@@ -8,7 +8,7 @@ import (
 /**
  * @Author Bestony <bestony@linux.com>
  */
-
+// Short Can make a Big Number Shorter by add a K or M as a postfix
 func Short(inputNumber int64) (string, error) {
 	if inputNumber < 1000 {
 		return shortNumberMinThanThousand(inputNumber)

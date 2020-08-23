@@ -4,6 +4,7 @@ import (
 	"strconv"
 )
 
+// Comma can add comma into your number
 func Comma(inputNumber int64) (string, error) {
 	inputStr := strconv.FormatInt(inputNumber, 10)
 	if inputNumber < 999 {
