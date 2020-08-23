@@ -30,12 +30,12 @@ func shortNumberMinThanThousand(inputNumber int64) (string, error) {
 func shortNumberBiggerThanThousandButSmallerThanMillion(inputNumber int64) (string, error) {
 	if inputNumber%1000 == 0 && inputNumber%1000.0 < 100 {
 		prefix := inputNumber / 1000
-		return fmt.Sprintf("%dk", prefix), nil
+		return fmt.Sprintf("%dK", prefix), nil
 	}
 
 	if inputNumber >= 1000 && inputNumber <= 1000000 {
 		prefix := float64(inputNumber) / 1000.00
-		return fmt.Sprintf("%0.1fk", prefix), nil
+		return fmt.Sprintf("%0.1fK", prefix), nil
 	}
 	return "", errors.New("can't short this number")
 }
