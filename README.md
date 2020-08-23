@@ -1,6 +1,6 @@
 # bignumber
 
-![Go](https://github.com/bestony/bignumber/workflows/Go/badge.svg)
+![Go](https://github.com/bestony/bignumber/workflows/Go/badge.svg) ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/bestony/bignumber) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/bestony/bignumber)
 
 Format numbers for human consumption
 
