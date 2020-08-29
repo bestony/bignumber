@@ -2,6 +2,7 @@ package bignumber
 
 import (
 	"strconv"
+	"strings"
 )
 
 // Comma can add comma into your number
@@ -18,6 +19,11 @@ func Comma(inputNumber int64) (string, error) {
 			res = "," + res
 		}
 	}
+
+	if strings.HasPrefix(res,","){
+		return strings.TrimPrefix(res,","),nil
+	}
+
 
 	return res, nil
 }

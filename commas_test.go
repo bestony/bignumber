@@ -26,6 +26,7 @@ func TestComma(t *testing.T) {
 		{name: "testThousand", args: args{inputNumber: 5000}, want: "5,000", wantErr: false},
 		{name: "testThousand", args: args{inputNumber: 9000}, want: "9,000", wantErr: false},
 		{name: "testThousand", args: args{inputNumber: 1000000}, want: "1,000,000", wantErr: false},
+		{name: "testCustomNumber", args: args{inputNumber: 123543}, want: "123,543", wantErr: false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
